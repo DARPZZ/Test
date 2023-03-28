@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="804.0" prefWidth="1242.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.devops.HelloController">
+   <top>
+      <TextField fx:id="text" alignment="TOP_LEFT" prefHeight="105.0" prefWidth="1161.0" promptText="Her kommer beregningen" BorderPane.alignment="CENTER" />
+   </top>
+   <center>
+      <GridPane BorderPane.alignment="TOP_LEFT">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="tryk" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handler" prefHeight="10000.0" prefWidth="10000.0" text="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="clearknap" mnemonicParsing="false" onAction="#handleClear" prefHeight="270.0" prefWidth="409.0" text="Clear" GridPane.rowIndex="3" />
+            <Button fx:id="knap2" mnemonicParsing="false" onAction="#handler2" prefHeight="10000.0" prefWidth="10000.0" text="2" GridPane.columnIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap5" mnemonicParsing="false" onAction="#handler5" prefHeight="10000.0" prefWidth="10000.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap3" mnemonicParsing="false" onAction="#handler3" prefHeight="10000.0" prefWidth="10000.0" text="3" GridPane.columnIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap4" mnemonicParsing="false" onAction="#handler4" prefHeight="10000.0" prefWidth="10000.0" text="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap6" mnemonicParsing="false" onAction="#handler6" prefHeight="10000.0" prefWidth="10000.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap7" contentDisplay="RIGHT" mnemonicParsing="false" onAction="#handler7" prefHeight="10000.0" prefWidth="10000.0" text="7" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap8" mnemonicParsing="false" onAction="#handler8" prefHeight="10000.0" prefWidth="9999.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knapgange" mnemonicParsing="false" onAction="#handlergange" prefHeight="10000.0" prefWidth="10000.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Button fx:id="knapdividere" mnemonicParsing="false" onAction="#handlerdividere" prefHeight="10000.0" prefWidth="10000.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knapminus" mnemonicParsing="false" onAction="#handlerminus" prefHeight="10000.0" prefWidth="10000.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knapplus" mnemonicParsing="false" onAction="#handlerplus" prefHeight="10000.0" prefWidth="10000.0" text="+" GridPane.columnIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap9" mnemonicParsing="false" onAction="#handler9" prefHeight="10000.0" prefWidth="10000.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knap0" mnemonicParsing="false" onAction="#handler0" prefHeight="248.0" prefWidth="339.0" text="0" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button fx:id="knapslut" mnemonicParsing="false" onAction="#handlerslut" prefHeight="100000.0" prefWidth="10000.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font size="20.0" />
+               </font></Button>
+            <Button mnemonicParsing="false" prefHeight="10000.0" prefWidth="10000.0" text="Backspace" GridPane.columnIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="knappi" mnemonicParsing="false" onAction="#handlerpi" prefHeight="10000.0" prefWidth="10000.0" text="PI" GridPane.columnIndex="4" GridPane.rowIndex="1">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </GridPane>
+   </center>
+   <right>
+      <TextField fx:id="beregning" alignment="TOP_RIGHT" prefHeight="739.0" prefWidth="187.0" text="History" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font></TextField>
+   </right>
+   <bottom>
+      <Button fx:id="knaplucky" mnemonicParsing="false" onAction="#handlerlucky" prefHeight="31.0" prefWidth="451.0" text="Fell lucky" BorderPane.alignment="CENTER" />
+   </bottom>
+</BorderPane>
